@@ -92,10 +92,19 @@ footer {
     display: flex;
     justify-content: center;
     padding: 1em;
-    gap: 1em;
+    gap: 3em;
+}
+
+footer a {
+    color: #aaa;
 }
 
 footer .socials {
     display: flex;
     gap: 1em;
+}
+
+footer .footer-info {
+    display: flex;
+    flex-direction: column;
 }
