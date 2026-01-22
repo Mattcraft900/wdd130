@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%; /* Will never get bigger than their parent element */
+    height: auto;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 1200px;
+    margin: auto; /* Automatically centers stuff (when it;s fullscreen, at least) */ 
+    background-color: lightblue;
+    font-size: 100%; /* Always use % with font-size so that the user can adjust it themselves with browser accessibility settings */
+}
+
+header {
+    text-align: center;
+    background-color: #333;
+    padding: 1em;
+}
+
+header > nav {
+    display: flex; /* This method scales better for different browser ratios like mobile */
+    justify-content: center;
+    gap: 2em;
+}
+
+header > nav > a {
+    color: white;
+    text-decoration: none;
+}
+
+header > img {
+    border-radius: 50%; /* Makes it round instead of square */
+    margin: 1em auto; /* 1em for top/bottom, auto-centers left and right margins */
+}
+
+#image-scroller {
+    position: relative; /*Does nothing but becomes 'position'ed' for other elements like h1 below*/
+}
+
+#image-scroller h1 {
+    position: absolute; /*Removes the element from the normal flow of the page cpntent and just slaps it wherver we tell it to go*/
+    top: 10%; /*Puts it 10% down the height of the nearest 'position'ed' element (body by default) */
+    width: 100%; /*Necessary for being able to center the text*/
+    text-align: center;
+}
+
+#image-scroller p {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 0 1em;
+}
+
+#image-scroller img {
+    width: 100%;
+}
+
+#prod-gallery {
+    display: grid;
+    /* grid-template-columns: 20% 20% 20% 20%; /* Sorts stuff into four columns that are 20% of screen width */
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Sorts stuff into four columns that are of equal proportion to each other, covcering the whole screen width */
+    gap: 2em;
+    padding: 2em;
+}
+
+.product h2 {
+    font-size: 1em;
+    padding: 0.5em 0 0.2em 0;
+}
+
+.product p {
+    font-size: 0.8em;
+}
+
+.product img {
+    border-radius: 5%;
+    box-shadow: 1px 1px 10px #888;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    gap: 1em;
+}
+
+footer .socials {
+    display: flex;
+    gap: 1em;
+}
