@@ -1,22 +1,19 @@
-* {
-    box-sizing: border-box;
+/* Import Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rock+Salt&display=swap');
+
+body {
+    background-color: #fdfcfc;
+    font-family: Roboto, Helvetica, sans-serif;
+    font-size: 22px;
     padding: 0px;
     margin: 0px;
 }
 
-/*
-  --primary-color: #1E314C   ;
-  --secondary-color: #514B23 ;
-  --accent1-color: #6F8F66;
-  --accent2-color: #2089AC;
-*/
-
-body {
-    background-color: #1E314C;
+h2 {
+    margin: 0px;
 }
 
 #content {
-
     max-width: 1600px;
     margin: 0 auto;
 }
@@ -30,13 +27,19 @@ header {
     width: 80px;
 }
 
+#logo-link {
+    padding-top: 5px;
+}
+
 nav a {
     text-align: center;
     text-decoration: none;
     color: white;
+    padding: 35px;
 }
 
 nav a:hover {
+    color: #2089AC;
     color: black;
 }
 
@@ -46,6 +49,9 @@ nav a:hover {
 
 .home-title {
     color: white;
+    font-family: "Rock Salt", "Comic Neue", sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
 }
 
 .button-box {
@@ -54,44 +60,59 @@ nav a:hover {
 
 .book, .join {
     background-color: #6F8F66;
-    color: black;
+    color: white;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
 }
 
 .book:hover, .join:hover {
     background-color: #2089AC;
-    color: black;
+    color: white;
 }
 
 main section {
     text-align: center;
 }
 
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 
 #background {
     height: 725px;
-    background-color: #514B23;
+    background-color: #6F8F66;
 }
 
 .msg {
-    background-color: #6F8F66;
+    background-color: #514B23;
+    line-height: 1.5em;
+    padding: 35px;
 }
 
 .msg h2 {
     color: #1E314C;
+    font-family: "Rock Salt", "Comic Neue", sans-serif;
 }
 
 .msg p {
     color: white;
+    font-size: 0.8em;
+    padding-bottom: 15px;
 }
 
 footer {
-    background-color: #2089AC;
-    color: black;
+    background-color: #1E314C;
+    color: white;
     text-decoration: none;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 footer p {
@@ -99,15 +120,19 @@ footer p {
 }
 
 footer a {
-    color: white;
     text-decoration: none;
+    color: white;
 }
 
 footer a:hover {
-    color: black;
+    color: #2089AC;
 }
 
 footer p a:hover {
     text-decoration: underline;
+}
+
+footer .social img {
+    padding-top: 15px;
 }
 
