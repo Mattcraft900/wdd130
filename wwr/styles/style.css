@@ -43,6 +43,10 @@ nav a:hover {
     color: black;
 }
 
+#hero-img {
+    width: 100%;
+}
+
 #hero-msg h1, #hero-msg p {
     text-align: center;
 }
