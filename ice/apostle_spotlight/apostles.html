@@ -5,10 +5,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apostles Spotlights</title>
     <style>
-        /* Insert styles here */
+        * {
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            background-color: #E8ECED;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #apostles-card {
+            background-image: url(images/christus.webp);
+            background-size: cover;
+            background-position: center;
+            border: 6px solid black;
+            border-radius: 25px;
+            width: 600px;
+            padding: 10px 0 30px 0;
+            margin: 30px auto;
+            color: white;
+        }
+
+        img {
+            border: 4px solid white;
+            object-fit: cover;
+            object-position: top;
+            border-radius: 50%;
+            width: 100%;
+            aspect-ratio: 1/1;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 24px;
+        }
+
+        #presidency-row {
+            display: grid;
+            width: 60%;
+            grid-template-columns: 10fr 11fr 10fr;
+            column-gap: 7%;
+            margin: 10px auto;
+            align-items: end;
+        }
+
+        #presidency-row #prophet-img {
+            order: 1
+        }
+
+        #presidency-row #counselor1-img {
+            order: 0;
+        }
+        
+        #presidency-row #counselor2-img {
+            order: 2;
+        }
+
+        #apostles-title {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        #apostles-grid {
+            display: grid;
+            width: 60%;
+            margin: 0 auto;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            column-gap: 6%;
+            row-gap: 15px;
+        }
+
+        .apostle-img {
+            width: 100%;
+        }
     </style>
 </head>
 <body>
-    <!-- Insert HTML elements here -->
+    <main>
+        <section id="apostles-card">
+            <h1 class="title">First Presidency</h1>
+            <div id="presidency-row">
+                <img src="images/oaks.webp" alt="Dallin H. Oaks" id="prophet-img">
+                <img src="images/eyring.webp" alt="Henry B. Eyring" id="counselor1-img">
+                <img src="images/christofferson.webp" alt="D. Todd Christofferson" id="counselor2-img">
+            </div>
+            <h2 id="apostles-title">Quorum of the Twelve Apostles</h2>
+            <div id="apostles-grid">
+                <img src="images/holland.webp" alt="Jeffery R. Holland" class="apostle-img" class="quorum-president">
+                <img src="images/uchtdorf.webp" alt="Dieter F. Uchtdorf" class="apostle-img">
+                <img src="images/bednar.webp" alt="David A. Bednar" class="apostle-img">
+                <img src="images/cook.webp" alt="Quentin L. Cook" class="apostle-img">
+                <img src="images/anderson.webp" alt="Neil L. Anderson" class="apostle-img">
+                <img src="images/rasband.webp" alt="Ronald A. Rasband" class="apostle-img">
+                <img src="images/stevenson.webp" alt="Gary E. Stevenson" class="apostle-img">
+                <img src="images/renlund.webp" alt="Dale G. Renlund" class="apostle-img">
+                <img src="images/gong.webp" alt="Gerritt W. Gong" class="apostle-img">
+                <img src="images/soares.webp" alt="Ulisses Soares" class="apostle-img">
+                <img src="images/kearon.webp" alt="Patrick Kearon" class="apostle-img">
+                <img src="images/causse.webp" alt="Gérald Caussé" class="apostle-img">
+            </div>
+        </section>
+    </main>
 </body>
 </html>
