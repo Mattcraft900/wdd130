@@ -21,6 +21,8 @@ h2 {
 header {
     background-color: #2089AC;
     color: white;
+    display: grid;
+    grid-template-columns: 150px auto;
 }
 
 .logo {
@@ -29,6 +31,13 @@ header {
 
 #logo-link {
     padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
 }
 
 nav a {
@@ -43,16 +52,35 @@ nav a:hover {
     color: black;
 }
 
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: -100px;
+}
+
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+
 #hero-img {
     width: 100%;
 }
 
+#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+}
+
 #hero-msg h1, #hero-msg p {
     text-align: center;
+    color: white;
 }
 
 .home-title {
-    color: white;
     font-family: "Rock Salt", "Comic Neue", sans-serif;
     font-size: 2em;
     margin-top: 10px;
