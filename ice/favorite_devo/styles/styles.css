@@ -45,3 +45,23 @@ body {
   box-shadow: 5px 5px 0px black;
   min-height: 400px;
 }
+
+table, th, td {
+  border: 2px solid #2f2797;
+  background-color: #ddd;
+}
+
+table {
+  width: 60%;
+  margin: 10px auto;
+  margin-bottom: 40px;
+  border-spacing: 10px;
+  border-collapse: collapse;
+}
+
+th {
+  font-style: bold;
+  font-size: 1.1em;
+}
+
+
