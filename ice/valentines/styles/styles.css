@@ -1,1 +1,98 @@
 /* Add your CSS here to style your valentines day page */
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Great+Vibes&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: lightpink;
+}
+
+nav {
+    background-color: lightcoral;
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    font-size: 32px;
+    font-family: 'Great Vibes', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px 10px red;
+    height: 80px;
+    align-items: center;
+}
+
+nav ul li {
+    width: 25%;
+    transition: width 1s, font-size 1s;
+    text-align: center;
+}
+
+nav ul li:hover {
+    width: 40%;
+    font-size: 48px;
+}
+
+h1 {
+    position: absolute;
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin-top: 400px;
+    text-align: center;
+    color: floralwhite;
+    font-size: 100px;
+    font-family: 'Emilys Candy', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 0px 0px 20px firebrick;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 50px;
+}
+
+img {
+    position: relative;
+    grid-column: 1/4;
+    z-index: -1;
+    display: block;
+    max-width: 1200px;
+    margin: 30px auto;
+    border: 10px solid firebrick;
+    border-radius: 100px;
+}
+
+section {
+    background-color: mistyrose;
+    margin: 0 20px 30px 20px;
+    padding: 20px 20px 30px 20px;
+    border-radius: 20px;
+    font-family: cursive;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Emilys Candy', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 0.5em;
+}
+
+section p {
+    text-align: justify;
+    color: darkred;
+}
+
+footer {
+    height: 60px;
+    background-color: lightcoral;
+    align-content: center;
+    text-align: center;
+    font-size: 24px;
+    color: floralwhite;
+}
