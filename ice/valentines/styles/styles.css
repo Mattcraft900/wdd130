@@ -36,6 +36,7 @@ nav ul li {
 nav ul li:hover {
     width: 40%;
     font-size: 48px;
+    cursor: pointer;
 }
 
 h1 {
