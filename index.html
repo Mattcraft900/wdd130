@@ -1,55 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal Page | Matt Hilton | WDD 130</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <title>Portal Page | Matt Hilton</title>
+    <!-- <link rel="stylesheet" href="styles/style.css"> -->
 </head>
+
 <body>
     <header>
+        <img class="logo" src="images/MH_logo.png" alt="MH logo" width="80">
+        <h1 id="header-text">Matthew Hilton's Home Page</h1>
         <nav>
-            <a href="wwr/index.html">Whitewater Rafting Website</a>
-            <a href="wwr/site-plan-rafting.html">WWR Site Plan</a>
-            <a href="ice/index.html">ICE</a>
-            <a href="aboutme.html">About Me</a>
+            <ul id="header-links">
+                <li><a href="wwr/index.html">Whitewater Rafting Website</a></li>
+                <li><a href="wwr/site-plan-rafting.html">WWR Site Plan</a></li>
+                <li><a href="ice/index.html">ICE</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+            </ul>
         </nav>
     </header>
+    <img src="images/background-binary.jpg" alt="Generic binary code" id="hero-image">
+    <h1 id="hero-name">Matthew Hilton</h1>
+    <ul class="hero-roles">
+        <li>Programmer</li>
+        <li>Problem-Solver</li>
+        <li>Huge Nerd</li>
+    </ul>
+    <img src="images/myself.jpg" alt="Photo of me" id="mugshot">
     <main>
-
-        <section id="blue">
-            <h2>Computer Dog</h2>
-            <img src="images/doge_computer.jpg" alt="Dog Image" width="500">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, perspiciatis voluptatem. Ex, voluptates officia ut, quis omnis quisquam accusantium et doloremque iure, nisi dicta sit quia sed? Odit, reiciendis consequatur.</p>
+        <section id="projects">
+            <h1 class="section-title">My Favorite Projects</h1>
+            <div class="tabs">
+                <button class="tablink" onclick="openTab(event, 'project-one')">
+                    <h2 class="tab-title">Project 1</h2>
+                    <p class="tab-snippet">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </button>
+                <button class="tablink" onclick="openTab(event, 'project-two')">
+                    <h2 class="tab-title">Project 2</h2>
+                    <p class="tab-snippet">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </button>
+                <button class="tablink" onclick="openTab(event, 'project-three')">
+                    <h2 class="tab-title">Project 3</h2>
+                    <p class="tab-snippet">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </button>
+            </div>
+            <div id="project-one" class="tabcontent active">
+                <h3 class="project-title">Project 1</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores assumenda qui repellendus itaque
+                    reprehenderit? Necessitatibus a architecto dolorum, unde odit dignissimos optio voluptate?
+                    Consequatur, molestiae architecto? Rem, aliquam! Perferendis, officiis?
+                    Impedit ut vero porro deleniti? Asperiores exercitationem at ad molestias earum dignissimos, labore
+                    explicabo! Repellat consequuntur voluptas, quas eum repellendus placeat, cupiditate reprehenderit
+                    eveniet assumenda accusantium esse inventore libero consectetur.
+                    Eius quos totam non doloribus voluptate error quia, ipsa excepturi suscipit. Aperiam odit expedita
+                    ipsum quia aliquid reiciendis accusamus, ea exercitationem ex quibusdam, eligendi et unde, quaerat
+                    ullam voluptatibus assumenda.
+                </p>
+                <img src="#" alt="Image of Project 1">
+            </div>
+            <div id="project-two" class="tabcontent">
+                <h3 class="project-title">Project 2</h3>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates non ex iusto vel vitae quo
+                    inventore beatae aliquid dolore corporis dicta voluptatum temporibus, numquam iste quam, facilis
+                    deleniti atque dignissimos.
+                    Id itaque aspernatur quod omnis minima. Debitis ex recusandae esse sequi commodi! Laborum ratione
+                    quaerat eveniet odio fugit deserunt ipsa iure provident amet iusto quam repellendus, voluptatum,
+                    rerum modi commodi.
+                    Facilis ut voluptatem cupiditate reiciendis sed aspernatur illo expedita id cumque. Repellendus
+                    libero nesciunt hic ratione quae, exercitationem explicabo modi quas quia eum rem laborum minus enim
+                    assumenda dolorum architecto.
+                </p>
+                <img src="#" alt="Image of Project 2">
+            </div>
+            <div id="project-three" class="tabcontent">
+                <h3 class="project-title">Project 3</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit error laboriosam soluta sit cum ex.
+                    Quaerat facilis laborum distinctio exercitationem maxime, rem officia quas. Obcaecati fugiat odio
+                    maiores ipsum autem.
+                    Quod enim nesciunt labore distinctio eligendi aliquid sunt recusandae laboriosam culpa temporibus
+                    ea, perspiciatis aspernatur numquam illo omnis consequatur soluta optio voluptates quis minima
+                    ratione! Modi esse rerum nostrum repellat!
+                    Consequuntur saepe hic magni numquam voluptatem illum atque minima doloribus mollitia quam iusto,
+                    repellat tempora voluptatibus odit cum! Aperiam minima beatae placeat, iure dolores tenetur
+                    necessitatibus veniam sequi! At, saepe.
+                </p>
+                <img src="#" alt="Image of Project 3">
+            </div>
+            <!-- JavaScript for the tabs above -->
+            <script>
+                function openTab(evt, cityName) {
+                    var i, tabcontent, tablinks;
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+                    tablinks = document.getElementsByClassName("tablink");
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+                    document.getElementById(cityName).style.display = "block";
+                    evt.currentTarget.className += " active";
+                }
+            </script>
         </section>
-
-        <section id="green">
-            <h2>Rad Content 1</h2>
-            <img src="https://picsum.photos/500" alt="Stock Image">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam eligendi alias non neque eius repellat quaerat voluptates porro tempore quibusdam. Quibusdam, earum ducimus! Deserunt ratione in commodi nisi similique doloribus!</p>
+        <section id="experience">
+            <h2 class="section-title">Work Experience</h2>
+            <table id="work-table">
+                <tr>
+                    <th>Position</th>
+                    <th>Employer</th>
+                    <th>Start/End Dates</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Lorem</td>
+                    <td>Sit Amet</td>
+                    <td>7/30/2020-current</td>
+                    <td>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, minus quisquam repudiandae
+                        exercitationem perferendis veritatis dolore ipsum perspiciatis quae optio cumque corporis itaque
+                        iusto facilis aperiam iste quas explicabo beatae.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ipsum</td>
+                    <td>Consectetur</td>
+                    <td>2/23/2016-7/7/2019</td>
+                    <td>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti nostrum iusto molestiae, id
+                        iure nesciunt in! Quisquam, excepturi quas? Recusandae, a at? Quas suscipit numquam laboriosam
+                        ad recusandae nesciunt magni?
+                    </td>
+                </tr>
+                <tr>
+                    <td>Dolor</td>
+                    <td>Adipisicing Elit</td>
+                    <td>10/12/2019-3/9/2020</td>
+                    <td>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, quod! Voluptate rerum repellat
+                        hic ea non, repellendus perspiciatis recusandae doloremque ad maiores nesciunt quas accusamus
+                        ipsa ex iusto, commodi sapiente.
+                    </td>
+                </tr>
+            </table>
         </section>
-
-        <section id="red">
-            <h2>Rad Content 2</h2>
-            <img src="https://picsum.photos/500" alt="Stock Image">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima voluptatem odio perferendis quidem, repellendus laborum nisi est architecto! Quo quam sequi, vel voluptates mollitia sed earum? Harum provident quidem nemo?</p>
-        </section>
-
-        <section id="about">
-            <h2>
-                Matt Hilton's Portal Page
-            </h2>
-            <img src="images/myself.jpg" alt="This is an image of me!" width="500">
-            <p>
-                This is my portal page. I am a student at BYU-Idaho.
-            </p>
-            <p>
-                This is another paragraph. (Truly, a marvel of modern technology and design.) I will talk about myself here.
-            </p>
+        <section id="contact-me">
+            <h2 class="section-title">Contact Me</h2>
+            <form action="">
+                <div class="input-field">
+                    <label for="user-name">Your Name:</label><br>
+                    <input type="text" id="user-name" name="user-name">
+                </div>
+                <div class="input-field">
+                    <label for="user-email">Your Email:</label>
+                    <input type="text" id="user-email" name="user-email">
+                </div>
+                <div class="input-field">
+                    <label for="email-subject-line">Email Subject:</label>
+                    <input type="text" id="email-subject-line" name="email-subject-line">
+                </div>
+                <div class="input-field">
+                    <label for="email-body">Email Message:</label>
+                    <input type="text" id="email-body" name="email-body">
+                </div>
+                <input class="submit-button" type="submit" value="Send">
+            </form>
         </section>
     </main>
     <footer>
-
+        <nav>
+            <ul id="footer-links">
+                <li><a href="wwr/index.html">Whitewater Rafting Website</a></li>
+                <li><a href="wwr/site-plan-rafting.html">WWR Site Plan</a></li>
+                <li><a href="ice/index.html">ICE</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+            </ul>
+        </nav>
+        <p class="footer-text">&copy; Matthew Hilton 2026</p>
     </footer>
 </body>
+
 </html>
