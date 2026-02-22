@@ -1,3 +1,26 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  /* Just using this as a literal pallette to store some repetitive values */
+  --offwhite: #F4F4FC;
+  --yellow:   #FAE943;
+  --orange:   #FABD43;
+  --blue:     #4353FA;
+  --navy:     #1E377F;
+
+  --base-color: var(--offwhite);
+  --primary-color1: var(--blue);
+  --primary-color2: var(--navy);
+  --accent-color1: var(--orange);
+  --accent-color2: var(--yellow);
+
+  --heading-font: Quantico, Aldrich, Roboto, Helvetica, sans-serif;
+  --subheading-font: Aldrich, Quantico, Roboto, Helvetica, sans-serif;
+  --paragraph-font: Roboto, Helvetica, sans-serif;
+}
+
+/* Page-wide basic reset */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,54 +28,99 @@
 }
 
 body {
-    max-width: 1000px;
-    margin: 0 auto;
-    background-color: #ddd;
+    background-color: var(--base-color);
+    font-family: var(--paragraph-font);
+    font-size: 16px;
+    padding: 0px;
+    margin: 0px;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+header {
+    background-color: var(--primary-color2);
+    color: var(--offwhite);
+    display: grid;
+    padding: 10px 100px;
+    grid-template-columns: 100px 400px auto;
+    align-items: center;
+}
+
+.logo {
+    display: block;
+    width: 80px;
+    aspect-ratio: 1/1;
+    grid-column: 1/2;
+}
+
+.header-text {
+    display: block;
+    font-family: var(--heading-font);
+    font-size: 26px;
+    grid-column: 2/3;
 }
 
 nav {
-    border: 3px solid #333;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
-    background-color: gray;
-}
-nav a {
-    color: white;
-    text-decoration: none;
-}
-
-main {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1em;
-    justify-items: center;
-}
-
-section#blue {
-    background-color: lightblue;
     grid-column: 3/4;
-    grid-row: 1/2;
+    margin: 0 auto;
+    font-family: var(--heading-font);
+    font-weight: light;
+    font-size: 1.6em;
 }
 
-section#green {
-    background-color: lightgreen;
-    grid-column: 1/2;
-    grid-row: 1/2;
+nav ul {
+    display: flex;
 }
 
-section#red {
-    background-color: lightcoral;
-    grid-column: 2/3;
-    grid-row: 1/2;
+nav li {
+    list-style-type: none;
+    margin: 0 20px;
 }
 
-section#about {
-    grid-column: 1/4;
-    
+nav .vl {
+    margin: 0;
 }
+
+nav a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: var(--offwhite);
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#hero {
+    background-image: url("../images/background-binary.jpg");
+    width: 100%;
+    height: 450px;
+    aspect-ratio: 10/3;
+    color: var(--offwhite);
+    padding: 150px;
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    align-items: center;
+}
+
+#hero-text {
+    font-family: var(--heading-font);
+    display: block;
+    font-size: 2em;
+}
+
+#hero-name {
+    font-size: 2em;
+    line-height: 0.9;
+}
+
+#hero-img {
+    display: block;
+    width: 150px;
+    aspect-ratio: 1/1;
+    box-shadow: 2px 2px 20px var(--primary-color2);
+    border-radius: 10px;
+}
+
+
+
+
