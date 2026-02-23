@@ -129,7 +129,7 @@ nav a:hover {
 }
 
 main section {
-    padding: 30px 10%;
+    padding: 0 10% 60px 10%;
 }
 
 /* FAVORITE PROJECTS SECTION */
@@ -141,10 +141,11 @@ main section {
     font-family: var(--heading-font);
     font-size: 4em;
     text-align: center;
+    padding: 10px;
 }
 
 #projects .section-title {
-    color: var(--offwhite)
+    color: var(--offwhite);
 }
 
 .tabs {
