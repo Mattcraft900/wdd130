@@ -128,8 +128,12 @@ nav a:hover {
     border-radius: 15px;
 }
 
-main section {
-    padding: 0 10% 60px 10%;
+main>* {
+    padding: 0 10%;
+}
+
+main>section {
+    padding-bottom: 60px;
 }
 
 /* FAVORITE PROJECTS SECTION */
@@ -322,6 +326,19 @@ main section {
     background-color: var(--accent-color2);
     font-family: var(--subheading-font);
     font-size: 1.2em;
+}
+
+.page-title {
+    color: var(--primary-color1);
+    font-family: var(--heading-font);
+    font-size: 6em;
+    text-align: center;
+}
+
+#ice-description {
+    text-align: center;
+    font-size: 24px;
+    padding: 5px 25%;
 }
 
 /* FOOTER */
