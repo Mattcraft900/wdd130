@@ -11,8 +11,10 @@
   --darkgreen: #1A7565;
   --babyblue: #84A0E6;
   --turquoise: #72C8BD;
+  --gray: #dce4e4;
 
   --base-color: var(--offwhite);
+  --base-color2: var(--gray);
   --primary-color1: var(--navy);
   --primary-color2: var(--darkgreen);
   --accent-color1: var(--babyblue);
@@ -266,7 +268,7 @@ main>section {
 }
 
 #work-table tr:nth-child(even) {
-    background-color: #dce4e4;
+    background-color: var(--base-color2);
 }
 
 /* CONTACT ME SECTION */
@@ -339,6 +341,39 @@ main>section {
     text-align: center;
     font-size: 24px;
     padding: 5px 25%;
+}
+
+#ice-challenges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8%;
+}
+
+.challenge-container {
+    width: calc(19%);
+    aspect-ratio: 4/3;
+    background-color: var(--base-color2);
+    margin: 30px 0;
+    padding: 15px;
+    border: 6px solid var(--accent-color1);
+    border-radius: 30px;
+}
+
+.challenge-link {
+    text-decoration: none;
+    color: black;
+}
+
+.challenge-title {
+    font-family: var(--subheading-font);
+    font-size: 24px;
+    color: var(--primary-color1);
+    text-align: center;
+    margin: 10px;
+}
+
+.challenge-snippet {
+    font-size: 16px;
 }
 
 /* FOOTER */
