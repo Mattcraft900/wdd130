@@ -362,16 +362,6 @@ main>section {
     font-size: 1.2em;
 }
 
-#report {
-    background-color: var(--primary-color1);
-}
-
-.subtitle {
-    font-family: var(--subheading-font);
-    color: white;
-
-}
-
 .page-title {
     color: var(--primary-color1);
     font-family: var(--heading-font);

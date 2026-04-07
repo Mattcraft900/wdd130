@@ -1,0 +1,147 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  /* Just using this as a literal pallette to store some repetitive values */
+  --offwhite: #F4FCFC;
+  --yellow:   #FAE943;
+  --orange:   #FABD43;
+  --blue:     #4f5cf0;
+  --navy:     #1E377F;
+  --darkgreen:#1A7565;
+  --babyblue: #84A0E6;
+  --turquoise:#72C8BD;
+  --gray:     #dce4e4;
+
+  --base-color: var(--offwhite);
+  --base-color2: var(--gray);
+  --primary-color1: var(--navy);
+  --primary-color2: var(--darkgreen);
+  --accent-color1: var(--blue);
+  --accent-color2: var(--turquoise);
+
+  --heading-font: Quantico, Aldrich, Roboto, Helvetica, sans-serif;
+  --subheading-font: Aldrich, Quantico, Roboto, Helvetica, sans-serif;
+  --paragraph-font: Roboto, Helvetica, sans-serif;
+}
+
+/* Page-wide basic reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--base-color2);
+    font-family: var(--paragraph-font);
+    font-size: 16px;
+}
+
+/* HEADER */
+header {
+    background-color: var(--primary-color1);
+    color: var(--offwhite);
+    display: grid;
+    padding: 10px 100px;
+    grid-template-columns: 100px 400px auto;
+    align-items: center;
+}
+
+.logo {
+    display: block;
+    width: 80px;
+    aspect-ratio: 1/1;
+    grid-column: 1/2;
+}
+
+.header-text {
+    display: block;
+    font-family: var(--heading-font);
+    font-size: 26px;
+    grid-column: 2/3;
+}
+
+nav {
+    grid-column: 3/4;
+    margin: 0 auto;
+    font-family: var(--heading-font);
+    font-weight: light;
+    font-size: 1.6em;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav li {
+    list-style-type: none;
+    margin: 0 20px;
+}
+
+nav .vl {
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: var(--offwhite);
+}
+
+nav a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* MAIN CONTENT */
+main {
+    padding: 0 10%;
+}
+
+.page-title {
+    color: var(--primary-color1);
+    font-family: var(--heading-font);
+    text-decoration: underline;
+    font-size: 3em;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#report {
+    margin-bottom: 40px;
+}
+
+#report li {
+    font-size: 1.25em;
+    margin-left: 40px;
+}
+
+.subtitle {
+    font-family: var(--subheading-font);
+    font-size: 2em;
+    margin: 20px 0 10px 0;
+}
+
+.question {
+    list-style-type: disc;
+    font-weight: bold;
+}
+
+.answer {
+    list-style-type: none;
+}
+
+
+/* FOOTER */
+footer {
+    background-color: var(--primary-color1);
+    color: var(--offwhite);
+    text-align: center;
+    padding: 10px;
+}
+
+
