@@ -146,16 +146,19 @@ main>section {
     padding-bottom: 30px;
     border-radius: 10px;
     align-items: center;
+    display: grid;
+    grid-template-columns: 500px auto;
 }
 
 #report-section h1 {
+    grid-column: 1/2;
     font-family: var(--subheading-font);
-    display: inline-block;
     line-height: normal;
+    text-align: right;
 }
 
 .report-link {
-    display: inline-block;
+    grid-column: 2/3;
     text-align: center;
     text-decoration: none;
     background-color: var(--primary-color1);

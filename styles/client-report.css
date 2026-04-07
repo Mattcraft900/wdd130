@@ -135,6 +135,9 @@ main {
     list-style-type: none;
 }
 
+.link-text {
+    margin: 10px 0 0 40px;
+}
 
 /* FOOTER */
 footer {
